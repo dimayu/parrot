@@ -1,4 +1,4 @@
-var speed = 400;
+let speed = 400;
 
 // Question handler
 $(".faq__item").on("click", function () {
@@ -12,7 +12,7 @@ $(".faq__item").on("click", function () {
         .slideUp();
 
     // Get image for active question
-    var img = $(this).children(".faq__icon");
+    let img = $(this).children(".faq__icon");
     // Remove the 'rotate' class for all images except the active 
     $("img").not(img).removeClass("rotate");
 

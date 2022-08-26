@@ -7,24 +7,24 @@ let settings = {
     mobileFirst: false,
     container: {
         maxWidth: '1170px',
-        fields: '135px'
+        fields: '115px'
     },
     breakPoints: {
         lm: {
-            width: '1280px',
+            width: '1140px',
             fields: '50px'
         },
         md: {
             width: '940px',
-            fields: '25px'
+            fields: '35px'
         },
         sm: {
             width: '780px',
-            fields: '15px'
+            fields: '25px'
         },
         xxs: {
             width: '440px',
-            fields: '10px'
+            fields: '15px'
         }
     }
 };

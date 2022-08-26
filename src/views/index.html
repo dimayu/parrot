@@ -27,70 +27,252 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-
-
 <!--
     *********HEADER*******
 -->
 <header class="header">
     <div class="wrapper">
-        <div class="header__items">
-            <div class="header__items__item">
-                <div class="mobile-nav-button">
-                    <div class="mobile-nav-button__line"></div>
-                    <div class="mobile-nav-button__line"></div>
-                    <div class="mobile-nav-button__line"></div>
-                </div>
-            </div>
+        <div class="mobile-nav-button">
+            <div class="mobile-nav-button__line"></div>
+            <div class="mobile-nav-button__line"></div>
+            <div class="mobile-nav-button__line"></div>
         </div>
+        <nav class="mobile-menu">
+            <ul class="mobile-menu__inner">
+                <li class="mobile-menu__inner--item"><a href="#">Home</a></li>
+                <li class="mobile-menu__inner--item"><a href="#">Credits</a></li>
+                <li class="mobile-menu__inner--item"><a href="#">Exchange</a></li>
+                <li class="mobile-menu__inner--item"><a href="#">Partners</a></li>
+                <li class="mobile-menu__inner--item"><a href="#">Stock</a></li>
+                <li class="mobile-menu__inner--item"><a href="#">Holding</a></li>
+                <li class="mobile-menu__inner--item"><a href="#">Holding</a></li>
+            </ul>
+        </nav>
+        <nav class="nav">
+            <ul class="nav__inner">
+                <li class="nav__inner--item"><a href="#">Home</a></li>
+                <li class="nav__inner--item"><a href="#">Credits</a></li>
+                <li class="nav__inner--item"><a href="#">Exchange</a></li>
+                <li class="nav__inner--item"><a href="#">Partners</a></li>
+                <li class="nav__inner--item"><a href="#">Stock</a></li>
+                <li class="nav__inner--item"><a href="#">Holding</a></li>
+                <li class="nav__inner--item"><a href="#">Holding</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
-
-<!--
-    *****NAVIGATION******
--->
-
-<nav class="mobile-menu">
-    <ul>
-        <li class="active">
-            <a href="#"></a>
-        </li>
-        <li>
-            <a href="#"></a>
-        </li>
-        <li>
-            <a href="#"></a>
-        </li>
-        <li>
-            <a href="#"></a>
-        </li>
-        <li>
-            <a href="#"></a>
-        </li>
-        <li>
-            <a href="#"></a>
-        </li>
-        <li>
-            <a href="#">
-            </a>
-        </li>
-    </ul>
-</nav>
-
 <!--
     *********MAIN*******
 -->
 <main class="main">
+    <div class="wrapper">
+        <div class="main-inner">
+            <div class="main__content">
+                <div class="main__content__header">
+                    <h1 class="main__content__header--title">ParrotWings Exchange</h1>
+                    <form class="search">
+                        <input type="search" id="search" class="search__input">
+                        <label for="search" class="fa fa-search search__label"></label>
+                    </form>
+                </div>
+                <h2 class="main__content--subtitle">Products</h2>
+                <div class="products-items">
+                    <div class="products-items__item">
+                        <picture class="products-items__item--pic">
+                            <source srcset="img/parrot-1.webp" type="image/webp">
+                            <img src="img/parrot-1.jpg" alt="pic" width="111px" height="156px">
+                        </picture>
+                        <h4 class="products-items__item--subtitle">2 props</h4>
+                        <h3 class="products-items__item--title">Unlimited exchange</h3>
+                        <a href="#" class="products-items__item--link">Order</a>
+                    </div>
+                    <div class="products-items__item">
+                        <picture class="products-items__item--pic">
+                            <source srcset="img/parrot-2.webp" type="image/webp">
+                            <img src="img/parrot-2.jpg" alt="pic" width="111px" height="156px">
+                        </picture>
+                        <h4 class="products-items__item--subtitle">1 prop</h4>
+                        <h3 class="products-items__item--title">International excha...</h3>
+                        <a href="#" class="products-items__item--link">Order</a>
+                    </div>
+                    <div class="products-items__item">
+                        <picture class="products-items__item--pic">
+                            <source srcset="img/parrot-3.webp" type="image/webp">
+                            <img src="img/parrot-3.jpg" alt="pic" width="111px" height="156px">
+                        </picture>
+                        <h4 class="products-items__item--subtitle">3 props, all</h4>
+                        <h3 class="products-items__item--title">Additional services</h3>
+                        <a href="#" class="products-items__item--link">Order</a>
+                    </div>
+                    <div class="products-items__item">
+                        <picture class="products-items__item--pic">
+                            <source srcset="img/parrot-4.webp" type="image/webp">
+                            <img src="img/parrot-4.jpg" alt="pic" width="111px" height="156px">
+                        </picture>
+                        <h4 class="products-items__item--subtitle">5 props</h4>
+                        <h3 class="products-items__item--title">Support</h3>
+                        <a href="#" class="products-items__item--link">Order</a>
+                    </div>
+                    <div class="products-items__item">
+                        <picture class="products-items__item--pic">
+                            <source srcset="img/parrot-5.webp" type="image/webp">
+                            <img src="img/parrot-5.jpg" alt="pic" width="111px" height="156px">
+                        </picture>
+                        <h4 class="products-items__item--subtitle">2 props</h4>
+                        <h3 class="products-items__item--title">Holiday works</h3>
+                        <a href="#" class="products-items__item--link">Order</a>
+                    </div>
+                    <div class="products-items__item">
+                        <picture class="products-items__item--pic">
+                            <source srcset="img/parrot-6.webp" type="image/webp">
+                            <img src="img/parrot-6.jpg" alt="pic" width="111px" height="156px">
+                        </picture>
+                        <h4 class="products-items__item--subtitle">not in access</h4>
+                        <h3 class="products-items__item--title">Postal delivery</h3>
+                        <a href="#" class="products-items__item--link">Order</a>
+                    </div>
+                    <div class="products-items__item">
+                        <picture class="products-items__item--pic">
+                            <source srcset="img/parrot-7.webp" type="image/webp">
+                            <img src="img/parrot-7.jpg" alt="pic" width="111px" height="156px">
+                        </picture>
+                        <h4 class="products-items__item--subtitle">2 props</h4>
+                        <h3 class="products-items__item--title">Document manag...</h3>
+                        <a href="#" class="products-items__item--link">Order</a>
+                    </div>
+                    <div class="products-items__item">
+                        <picture class="products-items__item--pic">
+                            <source srcset="img/parrot-8.webp" type="image/webp">
+                            <img src="img/parrot-8.jpg" alt="pic" width="111px" height="156px">
+                        </picture>
+                        <h4 class="products-items__item--subtitle">1 prop</h4>
+                        <h3 class="products-items__item--title">Promotions</h3>
+                        <a href="#" class="products-items__item--link">Order</a>
+                    </div>
+                </div>
+                <a href="#" class="link-more">More products...</a>
+            </div>
+            <aside class="main__aside">
+                <div class="main__aside__block">
+                    <h3 class="main__aside__block--title">Sign Up</h3>
+                    <form class="form">
+                        <input class="form__input" type="text"  placeholder="Sign Up"/>
+                        <input class="form__input" type="password"  placeholder="Last Name"/>
+                        <input class="form__input" type="text"  placeholder="Email"/>
+                        <button class="form__btn">Sign Up</button>
+                        <p class="message">By creating a PW Exchange Account you acknowledge that
+                            you have read, understood and agree to the <a href="#">Terms of Use</a>
+                            and <a href="#">Privacy Policy.</a></p>
+                    </form>
+                </div>
+                <div class="main__aside__block">
+                    <h3 class="main__aside__block--title">Online Monitor</h3>
+                    <form class="form">
 
+                        <button class="form__btn">Sign Up</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </div>
 </main>
 
-
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer__social">
+            <div class="footer__social__links">
+                <a href="#" class="footer__social__links--link">
+                    <i class="fa-brands fa-evernote"></i>
+                </a>
+                <a href="#" class="footer__social__links--link">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="#" class="footer__social__links--link">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+                <a href="#" class="footer__social__links--link">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="footer__social__links--link">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#" class="footer__social__links--link">
+                    <i class="fa-brands fa-github-alt"></i>
+                </a>
+            </div>
+            <h3>© Parrot Wings</h3>
+        </div>
+        <nav class="footer__nav-items">
+            <ul class="footer__nav-items__item">
+                <li class="footer__nav-items--title">Recruitment Info</li>
+                <li class="footer__nav-items--item">
+                    Candidate First Name: Username
+                </li>
+                <li class="footer__nav-items--item">
+                    Candidate Last Name: Username
+                </li>
+                <li class="footer__nav-items--item">
+                    Spent Time: X hours
+                </li>
+                <li class="footer__nav-items--item">
+                    Email: username@server.name
+                </li>
+                <li class="footer__nav-items--item">
+                    Test date: dd.mm,yyyy
+                </li>
+            </ul>
+            <ul class="footer__nav-items__item">
+                <li class="footer__nav-items--title">Resources</li>
+                <li class="footer__nav-items--item">
+                    <a href="#">Loader icon --- search on Fontello.com</a>
+                </li>
+                <li class="footer__nav-items--item">
+                    <a href="#">Icons --- Entypo</a>
+                </li>
+                <li class="footer__nav-items--item">
+                    <a href="#">Fonts --- search in this file</a>
+                </li>
+                <li class="footer__nav-items--item">
+                    <a href="#">Background --- standart situation:
+                        designer lose file</a>
+                </li>
+            </ul>
+            <ul class="footer__nav-items__item">
+                <li class="footer__nav-items--title">Navigation</li>
+                <li class="footer__nav-items--item">
+                    <a href="#">Navigation</a>
+                </li>
+                <li class="footer__nav-items--item">
+                    <a href="#">Application</a>
+                </li>
+                <li class="footer__nav-items--item">
+                    <a href="#">Holding</a>
+                </li>
+                <li class="footer__nav-items--item">
+                    <a href="#">About</a>
+                </li>
+            </ul>
+            <div class="footer__nav-items__desc">
+                <picture class="footer__nav-items__desc--pic">
+                    <source srcset="img/icons-browser.webp" type="image/webp">
+                    <img src="img/icons-browser.png" alt="pic" width="191px" height="25px">
+                </picture>
+                <div class="footer__nav-items__desc--text">Project should work on next stack:
+                    IE11, actual version of Firefox, Chrome
+                    on desktop and android, Opera (opera mini),
+                    Safari on mac and ios.</div>
+            </div>
+        </nav>
+    </div>
+</footer>
+<script src="https://kit.fontawesome.com/23b4085b53.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>

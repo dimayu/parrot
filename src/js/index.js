@@ -1,13 +1,21 @@
-$(document).ready(function () {
-    //Menu button on click event
-    $('.mobile-nav-button').on('click', function () {
-        // Toggles a class on the menu button to transform the burger menu into a cross
-        $(".mobile-nav-button .mobile-nav-button__line:nth-of-type(1)").toggleClass("mobile-nav-button__line--1");
-        $(".mobile-nav-button .mobile-nav-button__line:nth-of-type(2)").toggleClass("mobile-nav-button__line--2");
-        $(".mobile-nav-button .mobile-nav-button__line:nth-of-type(3)").toggleClass("mobile-nav-button__line--3");
-
-        // Toggles a class that slides the menu into view on the screen
-        $('.mobile-menu').toggleClass('mobile-menu--open');
-        return false;
+$(".js-open-modal").click(function (e) {
+    e.preventDefault();
+    this.addClass("sss");
+    dataModal = $(this).attr("data-modal");
+    $("#" + dataModal).css({
+        display: "block"
     });
+    // $("body").css({"overflow-y": "hidden"}); //Prevent double scrollbar.
+});
+document.querySelector(".js-open-modal").onclick = function () {
+    console.log(123);
+};
+
+document.querySelectorAll(".js-open-modal")
+
+$(".js-close-modal, .modal-bg").click(function () {
+    $(".custom-modal").css({
+        display: "none"
+    });
+    // $("body").css({"overflow-y": "auto"}); //Prevent double scrollbar.
 });
