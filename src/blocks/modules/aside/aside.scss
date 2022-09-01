@@ -1,0 +1,23 @@
+.main__aside {
+  width: 338px;
+
+  @include md-block() {
+    margin: auto;
+
+    &__block {
+      margin-bottom: 30px;
+
+      &:nth-child(1) {
+        display: none;
+      }
+    }
+  }
+
+  @include xxs-block() {
+    width: 100%;
+
+    &__block {
+      margin-bottom: 0;
+    }
+  }
+}
