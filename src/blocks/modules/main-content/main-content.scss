@@ -1,62 +1,62 @@
 .content {
-  box-sizing: border-box;
-
-  @include md-block() {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 0;
-  }
-
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-top: 4px;
-
-    @include xs-block() {
-      display: none;
+    @include md-block {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 0;
     }
 
-    &--title {
-      font-family: 'Oswald', sans-serif;
-      font-size: 34px;
-      line-height: 1.2;
-      font-weight: 300;
-      color: #121212;
-    }
-  }
+    box-sizing: border-box;
 
-  &--subtitle {
-    position: relative;
-    margin: 16px 0 33px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 26px;
-    line-height: 1.2;
-    font-weight: 300;
+    &__header {
+        @include xs-block {
+            display: none;
+        }
 
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 19px;
-      height: 8px;
-      background-color: #933435;
-      bottom: 7px;
-      left: -26px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 4px;
+
+        &--title {
+            font-family: Oswald, sans-serif;
+            font-size: 34px;
+            line-height: 1.2;
+            font-weight: 300;
+            color: #121212;
+        }
     }
 
-    @include md-block() {
-      margin-top: 0;
-      margin-bottom: 24px;
-      padding-left: 26px;
+    &--subtitle {
+        @include md-block {
+            margin-top: 0;
+            margin-bottom: 24px;
+            padding-left: 26px;
 
-      &::before {
-        left: 0;
-      }
-    }
+            &::before {
+                left: 0;
+            }
+        }
 
-    @include xxs-block() {
-      margin-left: 15px;
+        @include xxs-block {
+            margin-left: 15px;
+        }
+
+        position: relative;
+        margin: 16px 0 33px;
+        font-family: Oswald, sans-serif;
+        font-size: 26px;
+        line-height: 1.2;
+        font-weight: 300;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 7px;
+            left: -26px;
+            width: 19px;
+            height: 8px;
+            background-color: #933435;
+        }
     }
-  }
 }

@@ -1,156 +1,156 @@
 .footer {
-  flex: 0 0 auto;
-  background-color: #181818;
+    flex: 0 0 auto;
+    background-color: #181818;
 
-  &-top {
-    background-color: #151515;
-  }
-
-  &__social {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 47px 10px;
-
-    @include md-block() {
-      padding: 37px 0  22px;
-    }
-
-    &__links {
-      width: 66%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      @include md-block() {
-        width: 100%;
-
-        &--link {
-          font-size: 32px;
+    .h3-mobile {
+        @include md-block {
+            display: block;
+            padding-bottom: 53px;
+            text-align: center;
+            font-family: Oswald, sans-serif;
+            font-size: 32px;
+            line-height: 1.2;
+            font-weight: 300;
+            letter-spacing: -0.025em;
+            color: #444;
         }
-      }
 
-      &--link {
-        font-size: 52px;
-        color: #444444;
-
-        &:hover {
-          color: #ffffff;
-        }
-      }
-    }
-
-    .h3 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 32px;
-      line-height: 1.2;
-      font-weight: 300;
-      letter-spacing: -0.025em;
-      color: #444444;
-
-      @include md-block() {
         display: none;
-      }
-
-      span {
-        font-size: 32px;
-      }
-    }
-  }
-
-  &__nav-items {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 47px 30px;
-
-    @include md-block() {
-      flex-wrap: wrap;
-      padding: 20px 0 54px;
     }
 
-    .lists {
-      display: flex;
-      justify-content: space-between;
-      width: 61%;
-
-      @include md-block() {
-        width: 100%;
-      }
-
-      @include xs-block() {
-        flex-wrap: wrap;
-      }
-    }
-
-    &__desc {
-      width: 24%;
-      margin-top: auto;
-      text-align: right;
-      letter-spacing: -0.025em;
-      color: #5c5c5c;
-
-      @include md-block() {
-        width: 100%;
-        text-align: center;
-        margin-top: 60px;
-      }
-
-      &--text {
-        margin-top: 20px;
-      }
-    }
-
-    &__item {
-      font-family: 'Oswald', sans-serif;
-
-      @include xs-block() {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 54px;
-
-        &:last-child {
-          margin-bottom: 0;
+    &__social {
+        @include md-block {
+            padding: 37px 0  22px;
         }
-      }
 
-      &--title {
-        margin-bottom: 20px;
-        font-size: 26px;
-        font-weight: 300;
-        letter-spacing: -0.025em;
-        color: #444444;
-      }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 47px 10px;
 
-      &--item {
-        margin-bottom: 12px;
-        font-size: 16px;
-        font-weight: 300;
-        color: #bbbbbb;
+        .h3 {
+            @include md-block {
+                display: none;
+            }
 
-        a {
-          color: #bbbbbb;
+            font-family: Oswald, sans-serif;
+            font-size: 32px;
+            line-height: 1.2;
+            font-weight: 300;
+            letter-spacing: -0.025em;
+            color: #444;
 
-          &:hover {
-            color: #ffffff;
-          }
+            span {
+                font-size: 32px;
+            }
         }
-      }
-    }
-  }
 
-  .h3-mobile {
-    display: none;
+        &__links {
+            @include md-block {
+                width: 100%;
 
-    @include md-block() {
-      display: block;
-      padding-bottom: 53px;
-      text-align: center;
-      font-family: 'Oswald', sans-serif;
-      font-size: 32px;
-      line-height: 1.2;
-      font-weight: 300;
-      letter-spacing: -0.025em;
-      color: #444444;
+                &--link {
+                    font-size: 32px;
+                }
+            }
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 66%;
+
+            &--link {
+                font-size: 52px;
+                color: #444;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
     }
-  }
+
+    &__nav-items {
+        @include md-block {
+            flex-wrap: wrap;
+            padding: 20px 0 54px;
+        }
+
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 47px 30px;
+
+        .lists {
+            @include md-block {
+                width: 100%;
+            }
+
+            @include xs-block {
+                flex-wrap: wrap;
+            }
+
+            display: flex;
+            justify-content: space-between;
+            width: 61%;
+        }
+
+        &__desc {
+            @include md-block {
+                width: 100%;
+                text-align: center;
+                margin-top: 60px;
+            }
+
+            width: 24%;
+            margin-top: auto;
+            text-align: right;
+            letter-spacing: -0.025em;
+            color: #5c5c5c;
+
+            &--text {
+                margin-top: 20px;
+            }
+        }
+
+        &__item {
+            @include xs-block {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 54px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            font-family: Oswald, sans-serif;
+
+            &--title {
+                margin-bottom: 20px;
+                font-size: 26px;
+                font-weight: 300;
+                letter-spacing: -0.025em;
+                color: #444;
+            }
+
+            &--item {
+                margin-bottom: 12px;
+                font-size: 16px;
+                font-weight: 300;
+                color: #bbb;
+
+                a {
+                    color: #bbb;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    &-top {
+        background-color: #151515;
+    }
 }
